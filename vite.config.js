@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   root: './', // Serve files from the root folder
   publicDir: 'public', // Optional: Specify the public folder for static assets
-    base: '/Digital_Motswana/',
+    base: '/Digital_Motswana/'
   build: {
     outDir: 'dist', // Output directory for the build
   },
