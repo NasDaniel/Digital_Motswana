@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/user.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Digital Motswana - User Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Toggle Button for Side Menu -->
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Side Menu -->
+      <div class="side-menu" id="sideMenu">
+        <h2>Digital Motswana</h2>
+        <ul>
+          <li>
+            <button id="homeButton">
+              <i class="fas fa-home"></i> Home
+            </button>
+          </li>
+          <li>
+            <button id="profileButton">
+              <i class="fas fa-user"></i> Profile
+            </button>
+          </li>
+          <li>
+            <button id="settingsButton">
+              <i class="fas fa-cog"></i> Settings
+            </button>
+          </li>
+          <li>
+            <button id="logoutButton">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="user-info">
+          <h1>Welcome, <span id="userName"></span>!</h1>
+          <p>Email: <span id="userEmail"></span></p>
+          <p>ID: <span id="userId"></span></p>
+        </div>
+
+        <!-- ID Card Section -->
+        <div class="id-card">
+          <h2>ID Card</h2>
+          <div class="id-card-content">
+            <div class="id-picture">
+              <img src="https://banner2.cleanpng.com/lnd/20240806/xl/3770fe02ff172d4531ec0aaf53417e.webp" alt="ID Picture" id="userProfilePicture" />
+            </div>
+            <div class="id-details">
+              <p><strong>Name:</strong> <span id="idName">XXX</span></p>
+              <p><strong>Surname:</strong> <span id="idSurname">XXX</span></p>
+              <p><strong>Date of Birth:</strong> <span id="idDob">XXX</span></p>
+              <p><strong>Place of Birth:</strong> <span id="idPob">XXX</span></p>
+              <p><strong>Eye Color:</strong> <span id="idEyeColor">XXX</span></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="services">
+          <h2>Services</h2>
+          <button id="applyForCertification">Apply for Certification</button>
+          <button id="updateProfile">Update Profile</button>
+          <button id="checkStatus">Check Application Status</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/user.js"></script>
+  </body>
+</html>
